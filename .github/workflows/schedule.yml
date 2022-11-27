@@ -2,7 +2,7 @@ name: Update gist
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
     - cron: "0 0 * * *"
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update gist
-        uses: maxam2017/productive-box@master
+        uses: janghana/productive-box@master
         env:
           GH_TOKEN: ${{ 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 }}
           GIST_ID: ${{ d73885b5afeaa4afe0695bad4098628c }}
